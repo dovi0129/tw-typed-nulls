@@ -1,0 +1,3574 @@
+{
+ "description": "Edge lists of all 11-neuron graphs in 'Does Connectome Wiring Help a Recurrent Controller? A Test Against Typed Degree-Preserving Nulls' (AAAI-27 Student Abstract).",
+ "neurons": {
+  "sensory": [
+   0,
+   1,
+   6,
+   7
+  ],
+  "inter": [
+   2,
+   3,
+   4,
+   5,
+   8
+  ],
+  "motor": [
+   9,
+   10
+  ]
+ },
+ "conventions": "Chemical synapses are directed (pre -> post). Each gap junction is listed once as an undirected pair and is used reciprocally. Neuron indices follow generate_circuits/tw_pure.bnn of the neuronal_circuit_policies repository (Lechner et al.); only topology and polarity are used.",
+ "families": {
+  "tw": "Tap-withdrawal circuit",
+  "typed_null": "Typed degree-preserving nulls of TW (first six pre-drawn graphs)",
+  "total_preserving_null": "Total-preserving nulls",
+  "ablation_rewired": "Post hoc ablation: each total-preserving null after typed double-edge swaps",
+  "ablation_motor_narrowed": "Post hoc ablation: first four total-preserving nulls with motor inputs narrowed as in TW"
+ },
+ "graphs": [
+  {
+   "id": "tw",
+   "family": "tw",
+   "derived_from": null,
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 5
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 1,
+     "b": 4
+    },
+    {
+     "a": 3,
+     "b": 6
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 2,
+    "direct_sensory_to_motor": 0
+   }
+  },
+  {
+   "id": "typed_null_1",
+   "family": "typed_null",
+   "derived_from": null,
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 5
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 1,
+     "b": 3
+    },
+    {
+     "a": 4,
+     "b": 6
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 2,
+    "direct_sensory_to_motor": 0
+   }
+  },
+  {
+   "id": "typed_null_2",
+   "family": "typed_null",
+   "derived_from": null,
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 4
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 1,
+     "b": 4
+    },
+    {
+     "a": 3,
+     "b": 6
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 2,
+    "direct_sensory_to_motor": 0
+   }
+  },
+  {
+   "id": "typed_null_3",
+   "family": "typed_null",
+   "derived_from": null,
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 4
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 1,
+     "b": 4
+    },
+    {
+     "a": 3,
+     "b": 6
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 2,
+    "direct_sensory_to_motor": 0
+   }
+  },
+  {
+   "id": "typed_null_4",
+   "family": "typed_null",
+   "derived_from": null,
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 3
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 1,
+     "b": 3
+    },
+    {
+     "a": 4,
+     "b": 6
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 2,
+    "direct_sensory_to_motor": 0
+   }
+  },
+  {
+   "id": "typed_null_5",
+   "family": "typed_null",
+   "derived_from": null,
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 5
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 1,
+     "b": 4
+    },
+    {
+     "a": 3,
+     "b": 6
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 2,
+    "direct_sensory_to_motor": 0
+   }
+  },
+  {
+   "id": "typed_null_6",
+   "family": "typed_null",
+   "derived_from": null,
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 5
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 1,
+     "b": 4
+    },
+    {
+     "a": 3,
+     "b": 6
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 2,
+    "direct_sensory_to_motor": 0
+   }
+  },
+  {
+   "id": "total_preserving_1",
+   "family": "total_preserving_null",
+   "derived_from": null,
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 1,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 1,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 6,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 6,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 7,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 8,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 10
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 0,
+     "b": 5
+    },
+    {
+     "a": 3,
+     "b": 6
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 9,
+    "direct_sensory_to_motor": 4
+   }
+  },
+  {
+   "id": "total_preserving_2",
+   "family": "total_preserving_null",
+   "derived_from": null,
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 6,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 7,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 8,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 5
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 0,
+     "b": 8
+    },
+    {
+     "a": 3,
+     "b": 7
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 12,
+    "direct_sensory_to_motor": 7
+   }
+  },
+  {
+   "id": "total_preserving_3",
+   "family": "total_preserving_null",
+   "derived_from": null,
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 1,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 6,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 7,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 8,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 9
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 1,
+     "b": 2
+    },
+    {
+     "a": 3,
+     "b": 4
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 9,
+    "direct_sensory_to_motor": 5
+   }
+  },
+  {
+   "id": "total_preserving_4",
+   "family": "total_preserving_null",
+   "derived_from": null,
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 7,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 7,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 8,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 4
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 0,
+     "b": 8
+    },
+    {
+     "a": 3,
+     "b": 7
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 12,
+    "direct_sensory_to_motor": 4
+   }
+  },
+  {
+   "id": "total_preserving_5",
+   "family": "total_preserving_null",
+   "derived_from": null,
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 1,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 1,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 8,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 8,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 5
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 0,
+     "b": 3
+    },
+    {
+     "a": 2,
+     "b": 4
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 8,
+    "direct_sensory_to_motor": 1
+   }
+  },
+  {
+   "id": "total_preserving_6",
+   "family": "total_preserving_null",
+   "derived_from": null,
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 6,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 4
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 2,
+     "b": 3
+    },
+    {
+     "a": 6,
+     "b": 8
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 7,
+    "direct_sensory_to_motor": 3
+   }
+  },
+  {
+   "id": "rewired_total_preserving_1",
+   "family": "ablation_rewired",
+   "derived_from": "total_preserving_1",
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 1,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 1,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 6,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 6,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 7,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 8,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 9
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 0,
+     "b": 5
+    },
+    {
+     "a": 3,
+     "b": 6
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 9,
+    "direct_sensory_to_motor": 3
+   }
+  },
+  {
+   "id": "rewired_total_preserving_2",
+   "family": "ablation_rewired",
+   "derived_from": "total_preserving_2",
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 6,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 7,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 8,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 10
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 0,
+     "b": 8
+    },
+    {
+     "a": 3,
+     "b": 7
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 12,
+    "direct_sensory_to_motor": 4
+   }
+  },
+  {
+   "id": "rewired_total_preserving_3",
+   "family": "ablation_rewired",
+   "derived_from": "total_preserving_3",
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 1,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 6,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 7,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 8,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 10
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 1,
+     "b": 3
+    },
+    {
+     "a": 2,
+     "b": 4
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 9,
+    "direct_sensory_to_motor": 4
+   }
+  },
+  {
+   "id": "rewired_total_preserving_4",
+   "family": "ablation_rewired",
+   "derived_from": "total_preserving_4",
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 7,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 7,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 8,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 5
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 0,
+     "b": 8
+    },
+    {
+     "a": 3,
+     "b": 7
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 12,
+    "direct_sensory_to_motor": 5
+   }
+  },
+  {
+   "id": "rewired_total_preserving_5",
+   "family": "ablation_rewired",
+   "derived_from": "total_preserving_5",
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 1,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 1,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 8,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 8,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 10
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 0,
+     "b": 2
+    },
+    {
+     "a": 3,
+     "b": 4
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 8,
+    "direct_sensory_to_motor": 5
+   }
+  },
+  {
+   "id": "rewired_total_preserving_6",
+   "family": "ablation_rewired",
+   "derived_from": "total_preserving_6",
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 6,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 9
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 4
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 2,
+     "b": 6
+    },
+    {
+     "a": 3,
+     "b": 8
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 7,
+    "direct_sensory_to_motor": 3
+   }
+  },
+  {
+   "id": "motor_narrowed_total_preserving_1",
+   "family": "ablation_motor_narrowed",
+   "derived_from": "total_preserving_1",
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 1,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 1,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 6,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 6,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 8,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 5
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 0,
+     "b": 5
+    },
+    {
+     "a": 3,
+     "b": 6
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 2,
+    "direct_sensory_to_motor": 0
+   }
+  },
+  {
+   "id": "motor_narrowed_total_preserving_2",
+   "family": "ablation_motor_narrowed",
+   "derived_from": "total_preserving_2",
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 6,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 8,
+     "post": 10
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 5
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 0,
+     "b": 8
+    },
+    {
+     "a": 3,
+     "b": 7
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 2,
+    "direct_sensory_to_motor": 0
+   }
+  },
+  {
+   "id": "motor_narrowed_total_preserving_3",
+   "family": "ablation_motor_narrowed",
+   "derived_from": "total_preserving_3",
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 1,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 2
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 8,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 0,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 4
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 1,
+     "b": 2
+    },
+    {
+     "a": 3,
+     "b": 4
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 2,
+    "direct_sensory_to_motor": 0
+   }
+  },
+  {
+   "id": "motor_narrowed_total_preserving_4",
+   "family": "ablation_motor_narrowed",
+   "derived_from": "total_preserving_4",
+   "chemical": [
+    {
+     "type": "excitatory",
+     "pre": 0,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 4
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 2,
+     "post": 10
+    },
+    {
+     "type": "excitatory",
+     "pre": 3,
+     "post": 5
+    },
+    {
+     "type": "excitatory",
+     "pre": 4,
+     "post": 3
+    },
+    {
+     "type": "excitatory",
+     "pre": 5,
+     "post": 9
+    },
+    {
+     "type": "excitatory",
+     "pre": 6,
+     "post": 8
+    },
+    {
+     "type": "excitatory",
+     "pre": 7,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 1,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 2,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 3,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 4,
+     "post": 5
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 5,
+     "post": 8
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 3
+    },
+    {
+     "type": "inhibitory",
+     "pre": 6,
+     "post": 4
+    },
+    {
+     "type": "inhibitory",
+     "pre": 7,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 2
+    },
+    {
+     "type": "inhibitory",
+     "pre": 8,
+     "post": 4
+    }
+   ],
+   "gap_junctions": [
+    {
+     "a": 0,
+     "b": 8
+    },
+    {
+     "a": 3,
+     "b": 7
+    }
+   ],
+   "summary": {
+    "excitatory": 9,
+    "inhibitory": 17,
+    "gap_junctions": 2,
+    "chemical_inputs_to_motor": 2,
+    "direct_sensory_to_motor": 0
+   }
+  }
+ ]
+}
